@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marent</title>
+    <link rel="stylesheet" href="./cars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>    
+<body>
+    <header>
+        <div class="logo">
+            <h1>MARENT</h1>
+        </div>
+        <nav>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search" id="srch" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+        <div class="icons">
+            <!-- Like/Dislike Button -->
+            <label class="container">
+                <input type="checkbox" id="likeBtn">
+                <span class="checkmark"></span>
+            </label>
+            <!-- Bell Icon -->
+            <a href="#"><i class="far fa-bell"></i></a>
+            <!-- Settings Icon -->
+            <a href="#"><i class="fa fa-cog"></i></a>
+        </div>
+    </header>
+
+
+    <div class="critereRecherche">
+        <h6>Type</h6>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="sport"> Sport
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="suv"> SUV
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="mpv"> MPV
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="sedan"> Sedan
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="coupe"> Coupe
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="carType" value="hatchback"> Hatchback
+                </label>
+            </li>
+        </ul>
+        <div class="cap">
+            <h6>Capacity</h6>
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" name="capacity" value="2"> 2 person(10)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="capacity" value="4"> 4 person(14)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="capacity" value="6"> 6 person(12)
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" name="capacity" value="8"> 8 person(16)
+                    </label>
+                </li>
+            </ul>
+
+            <!-- Slider for price with percentage output -->
+            <h6>Price</h6>
+            <input type="range" min="1" max="100" step="10" id="price" oninput="valPrice.value=(price.value * 1) + '%'">
+            <output id="valPrice">10%</output>
+        </div>
+    </div>
+
+    <!-- Car Container -->
+    <!-- <div class="car-container">
+        <div class="car-card">
+            <h1>Nissan GT-R</h3>
+            <br>
+            <h4>sport</h4>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kluAAE1vKsdjK-JTT_sfxgHaE8&pid=Api&P=0&h=180" alt="Sport Car" class="car-image">
+            <div class="car-details">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.WmC2yXowQtbAjLIffSrocAHaHa&pid=Api&P=0&h=180">
+                <img src="c:\Users\LENOVO\Downloads\Capture_d_écran_2024-10-08_103726-removebg-preview.png" alt="manual">
+                <img src="c:\Users\LENOVO\Downloads\Capture_d_écran_2024-10-08_102715-removebg-preview.png" alt="capacity">
+                <LI>
+                    <p>80.00$/day</p>
+                </LI>
+                <button>For Rent</button>
+            </div>
+        </div>
+    </div>  -->
+    <div class="car-container">
+        <div class="car-card">
+            <h1>Nissan GT-R</h1>
+            <br>
+            <h4>Sport</h4>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kluAAE1vKsdjK-JTT_sfxgHaE8&pid=Api&P=0&h=180" alt="Sport Car" class="car-image">
+            
+            <div class="car-details">
+                <!-- Icons representing gas, manual, and capacity -->
+                <div class="details-icons">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.WmC2yXowQtbAjLIffSrocAHaHa&pid=Api&P=0&h=180" alt="gas">
+                    <img src="c:\Users\LENOVO\Downloads\Capture_d_écran_2024-10-08_103726-removebg-preview.png" alt="manual">
+                    <img src="c:\Users\LENOVO\Downloads\Capture_d_écran_2024-10-08_102715-removebg-preview.png" alt="capacity">
+                </div>
+    
+                <!-- Price and Rent button -->
+                <div class="price-rent">
+                    <p>80.00$/day</p>
+                    <button>For Rent</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fin de car-container -->
+    
+
+</body>
+</html>
+
+    
+    
+    
+
+
+    
+

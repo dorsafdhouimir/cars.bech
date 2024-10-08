@@ -1,0 +1,239 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgb(229, 240, 251);
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: hsl(198, 88%, 7%);
+    font-size: 24px;
+    margin-right: auto;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    width: 60%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(249, 251, 255);
+    color: hsl(0, 0%, 1%);
+    border: none;
+    border-radius: 40%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons i {
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sidebar (CritereRecherche) */
+.main-content {
+    display: flex;
+    margin-top: 100px; /* Adjust to not overlap with the fixed header */
+    height: calc(100vh - 100px);
+}
+
+.critereRecherche {
+    width: 250px;
+    background-color: #f9fbff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 100px;
+    left: 0;
+    height: 100vh;
+}
+
+.critereRecherche ul {
+    list-style: none;
+}
+
+.critereRecherche li {
+    margin: 20px 0;
+}
+
+.critereRecherche a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.critereRecherche a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px; /* Align with the sidebar */
+    padding: 20px;
+}
+
+.critereRecherche h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.critereRecherche ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.critereRecherche li {
+    margin: 10px 0;
+}
+
+.critereRecherche label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.critereRecherche input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.cap h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cap ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cap li {
+    margin: 10px 0;
+}
+
+.cap label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cap input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.car-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-details {
+    margin-top: 10px;
+}
+
+.details-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.details-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.price-rent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-rent p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.price-rent button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price-rent button:hover {
+    background-color: #45a049;
+}
